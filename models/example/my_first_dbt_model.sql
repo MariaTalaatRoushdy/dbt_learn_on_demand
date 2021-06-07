@@ -7,6 +7,7 @@
     Try changing "table" to "view" below
 */
 
+select * from raw.stripe.payment;
 {{ config(materialized='table') }}
 
 with source_data as (
